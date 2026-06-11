@@ -1,48 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sw">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Environmental Management Portal</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Tunza Mazingira</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #4CAF50, #81C784);
+      color: white;
+      text-align: center;
+    }
+    header {
+      padding: 50px;
+      animation: fadeIn 2s ease-in-out;
+    }
+    h1 {
+      font-size: 3em;
+      text-shadow: 2px 2px 5px #2e7d32;
+    }
+    .btn {
+      background: #2e7d32;
+      padding: 15px 30px;
+      border-radius: 30px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: transform 0.3s;
+    }
+    .btn:hover {
+      transform: scale(1.1);
+      background: #1b5e20;
+    }
+    .section {
+      padding: 60px 20px;
+      animation: slideUp 2s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+    @keyframes slideUp {
+      from {transform: translateY(50px); opacity: 0;}
+      to {transform: translateY(0); opacity: 1;}
+    }
+    footer {
+      background: #1b5e20;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Environmental Management</h1>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <h1>🌍 Tunza Mazingira Yetu</h1>
+    <p>Pamoja tunaweza kulinda dunia kwa vizazi vijavyo</p>
+    <a href="#actions" class="btn">Anza Sasa</a>
   </header>
 
-  <section id="home">
-    <h2>Welcome</h2>
-    <p>This website promotes awareness and action for sustainable environmental management.</p>
-  </section>
-
-  <section id="projects">
-    <h2>Our Projects</h2>
-    <ul>
-      <li>Tree planting campaigns</li>
-      <li>River and lake clean-ups</li>
-      <li>Promotion of renewable energy</li>
+  <div class="section" id="actions">
+    <h2>Hatua Rahisi za Kutunza Mazingira</h2>
+    <ul style="list-style:none; padding:0;">
+      <li>♻️ Tumia tena na punguza taka</li>
+      <li>🌱 Panda miti na mimea</li>
+      <li>🚴‍♂️ Tumia usafiri rafiki kwa mazingira</li>
+      <li>💡 Hifadhi nishati nyumbani</li>
     </ul>
-  </section>
+  </div>
 
-  <section id="education">
-    <h2>Environmental Education</h2>
-    <p>Learn about waste management, climate change, and biodiversity conservation through articles and resources.</p>
-  </section>
-
-  <footer id="contact">
-    <h2>Contact Us</h2>
-    <p>Email: info@environment.org</p>
-    <p>Phone: +255 700 000 000</p>
+  <footer>
+    <p>&copy; 2026 Tunza Mazingira | Imetengenezwa kwa upendo 💚</p>
   </footer>
+
+  <script>
+    // Animation ndogo ya kuonyesha ujumbe
+    document.querySelector(".btn").addEventListener("click", function() {
+      alert("Asante kwa kuchukua hatua za kutunza mazingira!");
+    });
+  </script>
 </body>
 </html>
-
